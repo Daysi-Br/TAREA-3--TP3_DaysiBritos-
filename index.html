@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Sitio Web</h1>
+    </header>
+
+    <nav>
+        <button class="boton" onclick="irPagina('index.html')">Inicio</button>
+        <button class="boton" onclick="irPagina('galeria.html')">Galería</button>
+        <button class="boton" onclick="irPagina('calculadora.html')">Calculadora</button>
+    </nav>
+
+    <main>
+        <section class="contenido">
+            <h2 id="mensajeBienvenida">¡Bienvenido!</h2>
+            <div id="nombreUsuario" class="nombre-container"></div>
+            
+            <div class="descripcion-paginas">
+                <h3>Descripción de las Páginas</h3>
+                <div class="pagina-info">
+                    <h4>Página de Galería</h4>
+                    <p>Una galería interactiva con imágenes animadas y efectos especiales al pasar el mouse.</p>
+                </div>
+                <div class="pagina-info">
+                    <h4>Página de Calculadora</h4>
+                    <p>Una calculadora con diferentes operaciones matemáticas: suma, división y promedio.</p>
+                </div>
+            </div>
+
+            <div class="formulario">
+                <h3>Ingresa tus datos</h3>
+                <input type="text" id="nombre" placeholder="Nombre">
+                <input type="text" id="apellido" placeholder="Apellido">
+                <button class="boton" onclick="saludarUsuario()">Enviar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 - Desarrollado por Daysi Britos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
