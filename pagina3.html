@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - TP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculadora de Operaciones</h1>
+        </header>
+        
+        <main>
+            <div class="welcome-section">
+                <h2 id="welcome-message">Bienvenido/a a la Calculadora</h2>
+            </div>
+            
+            <table class="operations-table">
+                <thead>
+                    <tr>
+                        <th class="animated-header">OPERACIÓN</th>
+                        <th class="animated-header">DESCRIPCIÓN</th>
+                        <th class="animated-header">BOTONES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SUMA</td>
+                        <td>Suma los 2 números ingresados</td>
+                        <td><button class="operation-button" onclick="calcular('suma')">Calcular Suma</button></td>
+                    </tr>
+                    <tr>
+                        <td>División</td>
+                        <td>Divide el 1er número con el 2do ingresado</td>
+                        <td><button class="operation-button" onclick="calcular('division')">Calcular División</button></td>
+                    </tr>
+                    <tr>
+                        <td>Promedio</td>
+                        <td>Promediar los 2 números ingresados</td>
+                        <td><button class="operation-button" onclick="calcular('promedio')">Calcular Promedio</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="buttons-container">
+                <a href="index.html" class="animated-button">Página Principal</a>
+                <a href="pagina2.html" class="animated-button">Galería de Imágenes</a>
+                <a href="pagina3.html" class="animated-button">Calculadora</a>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
